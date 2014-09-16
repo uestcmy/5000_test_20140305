@@ -1,0 +1,1 @@
+cmd_/home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/built-in.o :=  rm -f /home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/built-in.o; ar rcs /home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/built-in.o

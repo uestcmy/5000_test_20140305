@@ -1,0 +1,1 @@
+cmd_/home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/xrawdata_v6.o := ld -m elf_x86_64   -r -o /home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/xrawdata_v6.o /home/uestc/桌面/d2d-7.19_orig/ML605_driver_API/linux_driver/xrawdata/sguser.o 

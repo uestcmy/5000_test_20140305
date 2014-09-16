@@ -1,0 +1,4 @@
+rm dst.dat
+./file_test
+md5sum src.dat
+md5sum dst.dat

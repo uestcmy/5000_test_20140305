@@ -1,0 +1,1934 @@
+_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8783.097286]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8783.097288]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8783.097290]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8783.097292]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8784.094589] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8784.094592] in_atomic(): 1, irqs_disabled(): 0, pid: 344, name: ml605_api_test
+[ 8784.094594] Pid: 344, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8784.094596] Call Trace:
+[ 8784.094600]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8784.094604]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8784.094607]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 8784.094610]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8784.094613]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8784.094615]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8784.094620]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8784.094623]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8784.094626]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8784.094629]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8784.094632]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8785.091977] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8785.091980] in_atomic(): 1, irqs_disabled(): 0, pid: 344, name: ml605_api_test
+[ 8785.091982] Pid: 344, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8785.091984] Call Trace:
+[ 8785.091988]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8785.091991]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8785.091994]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 8785.091998]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8785.092000]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8785.092003]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8785.092006]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8785.092009]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8785.092012]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8785.092015]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8785.092018]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8786.495032] For engine 1, TestMode 0
+[ 8786.495034] SetState TX with RawTestMode 0, reg value 0
+[ 8786.495036] Raw Data Driver: Stopping the test, mode 0
+[ 8786.495037] ========Reg 9108 = 0
+[ 8786.495038] ========Reg 9100 = 0
+[ 8786.495039] ---------------------------------------------------
+[ 8786.495040] Raw Data Driver results Summary:-
+[ 8786.495041] Current Run Min Packet Size = 64, Max Packet Size = 32768
+[ 8786.495042] Buffers Transmitted = 12060, Buffers Received = 0, Error Count = 0
+[ 8786.495044] TxSeqNo = 12060, RxSeqNo = 0
+[ 8786.495048] Data Mismatch Status = 0
+[ 8786.495049] ---------------------------------------------------
+[ 8786.495050] For engine 1, TestMode 8200
+[ 8786.495051] SetState TX with RawTestMode 8200, reg value 2
+[ 8786.495052] Raw Data Driver: Starting the test - mode 8200, reg 2
+[ 8786.495054] Reg 9104 = 1000
+[ 8786.495054] ========Reg 9104 = 4096
+[ 8786.495055] RxPktSize 4096
+[ 8786.495056] ========Reg 9108 = 2
+[ 8786.495057] ---------------------------------------------------
+[ 8786.495058] Raw Data Driver results Summary:-
+[ 8786.495059] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 8786.495060] Buffers Transmitted = 12060, Buffers Received = 0, Error Count = 0
+[ 8786.495061] TxSeqNo = 0, RxSeqNo = 0
+[ 8786.495065] Data Mismatch Status = 0
+[ 8786.495066] ---------------------------------------------------
+[ 8786.495069] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8786.495071] in_atomic(): 1, irqs_disabled(): 0, pid: 344, name: ml605_api_test
+[ 8786.495074] Pid: 344, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8786.495075] Call Trace:
+[ 8786.495081]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8786.495084]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8786.495087]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 8786.495089]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8786.495091]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8786.495094]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8786.495097]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8786.495098]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8786.495100]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8786.495103]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8829.754893] Raw Data: Unregistering Xilinx driver from kernel.
+[ 8829.754896] Raw Data: Buffers Transmitted 12060 Received 14240
+[ 8829.754897] TxSeqNo = 0, RxSeqNo = 14240
+[ 8829.755896] User unregister for handle ffff880209a801b8
+[ 8829.755897] Resetting DMA engine
+[ 8829.755907] While resetting engine, got 0 in eng status reg
+[ 8829.755908] Now checking all descriptors
+[ 8829.755909] ForceFromHw: HwCnt is 0
+[ 8829.755913] DMA driver user count is 1
+[ 8829.755914] User unregister for handle ffff880209a822b8
+[ 8829.755915] Resetting DMA engine
+[ 8829.755924] While resetting engine, got 0 in eng status reg
+[ 8829.755925] Now checking all descriptors
+[ 8829.755926] ForceFromHw: HwCnt is 0
+[ 8829.755928] DMA driver user count is 0
+[ 8829.755929] ---------------------------------------------------
+[ 8829.755930] Raw Data Driver results Summary:-
+[ 8829.755931] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 8829.755932] Buffers Transmitted = 12060, Buffers Received = 14240, Error Count = 0
+[ 8829.755933] TxSeqNo = 0, RxSeqNo = 14240
+[ 8829.755938] Data Mismatch Status = 0
+[ 8829.755938] ---------------------------------------------------
+[ 8830.753034] Freeing user buffers
+[ 8830.753454] Unregistering rawdata char device driver
+[ 8832.751669] Came to xdma_cleanup
+[ 8832.751680] Came to xdma_remove
+[ 8833.748681] While resetting engine, got 0 in eng status reg
+[ 8833.748689] While resetting engine, got 0 in eng status reg
+[ 8833.748696] While resetting engine, got 0 in eng status reg
+[ 8833.748704] While resetting engine, got 0 in eng status reg
+[ 8833.748715] Unregistering char device driver
+[ 8833.748732] xdma_driver 0000:01:00.0: PCI INT A disabled
+[ 8833.748749] User count 0
+[ 8833.748749] GUI user open? 0
+[ 8833.748751] XDMA: Unregistering Xilinx base DMA driver from kernel.
+[ 8833.753220] XDMA: Inserting Xilinx base DMA driver in kernel.
+[ 8833.753247] xdma_driver 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[ 8833.753257] xdma_driver 0000:01:00.0: setting latency timer to 64
+[ 8833.753262] guodebug: consistent 0
+[ 8833.753333] Hardware design version 10000131
+[ 8833.753335] S2C, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[ 8833.753344] While resetting engine, got 0 in eng status reg
+[ 8833.753346] S2C, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[ 8833.753355] While resetting engine, got 0 in eng status reg
+[ 8833.753409] C2S, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[ 8833.753418] While resetting engine, got 0 in eng status reg
+[ 8833.753420] C2S, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[ 8833.753428] While resetting engine, got 0 in eng status reg
+[ 8833.753483] Device registered with major number 250
+[ 8833.753484] End of probe
+[ 8834.755394] Raw Data Init: Inserting Xilinx driver in kernel.
+[ 8834.761780] Allocated 2000 buffers from ffff880204eb4000
+[ 8834.762218] Allocated 2000 buffers from ffff88020a374000
+[ 8834.762220] Raw Data Init: Starting poll routine with aa55
+[ 8834.961743] Calling DmaRegister on engine 1 and 33
+[ 8834.961812] Handle for engine 1 is ffff880209a981b8
+[ 8834.961828] GetRxPkt: Came with wrong handle ffff880209a9a2b8
+[ 8834.961830] Should be 0
+[ 8834.961834] Handle for engine 33 is ffff880209a9a2b8
+[ 8836.761581] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8836.761584] in_atomic(): 1, irqs_disabled(): 0, pid: 387, name: ml605_api_test
+[ 8836.761586] Pid: 387, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8836.761587] Call Trace:
+[ 8836.761594]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8836.761597]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8836.761599]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 8836.761601]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8836.761604]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8836.761606]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8836.761608]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8836.761610]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8837.758925] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8837.758927] in_atomic(): 1, irqs_disabled(): 0, pid: 387, name: ml605_api_test
+[ 8837.758929] Pid: 387, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8837.758930] Call Trace:
+[ 8837.758933]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8837.758935]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8837.758941]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 8837.758945]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8837.758948]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8837.758950]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8837.758954]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8837.758957]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8837.758960]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8837.758963]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8837.758965]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8838.756283] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8838.756285] in_atomic(): 1, irqs_disabled(): 0, pid: 387, name: ml605_api_test
+[ 8838.756287] Pid: 387, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8838.756289] Call Trace:
+[ 8838.756292]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8838.756295]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8838.756297]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 8838.756299]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 8838.756301]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8838.756303]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8838.756305]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8838.756307]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8838.756309]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8838.756311]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8838.756312]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 8840.351603] For engine 1, TestMode 0
+[ 8840.351605] SetState TX with RawTestMode 0, reg value 0
+[ 8840.351607] Raw Data Driver: Stopping the test, mode 0
+[ 8840.351608] ========Reg 9108 = 0
+[ 8840.351609] ========Reg 9100 = 0
+[ 8840.351610] ---------------------------------------------------
+[ 8840.351611] Raw Data Driver results Summary:-
+[ 8840.351612] Current Run Min Packet Size = 64, Max Packet Size = 32768
+[ 8840.351613] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[ 8840.351615] TxSeqNo = 24060, RxSeqNo = 0
+[ 8840.351618] Data Mismatch Status = 0
+[ 8840.351618] ---------------------------------------------------
+[ 8840.351620] For engine 1, TestMode 8200
+[ 8840.351621] SetState TX with RawTestMode 8200, reg value 2
+[ 8840.351622] Raw Data Driver: Starting the test - mode 8200, reg 2
+[ 8840.351623] Reg 9104 = 1000
+[ 8840.351624] ========Reg 9104 = 4096
+[ 8840.351625] RxPktSize 4096
+[ 8840.351626] ========Reg 9108 = 2
+[ 8840.351627] ---------------------------------------------------
+[ 8840.351628] Raw Data Driver results Summary:-
+[ 8840.351629] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 8840.351630] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[ 8840.351631] TxSeqNo = 0, RxSeqNo = 0
+[ 8840.351635] Data Mismatch Status = 0
+[ 8840.351636] ---------------------------------------------------
+[ 8840.351639] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 8840.351641] in_atomic(): 1, irqs_disabled(): 0, pid: 387, name: ml605_api_test
+[ 8840.351643] Pid: 387, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 8840.351644] Call Trace:
+[ 8840.351651]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 8840.351655]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 8840.351657]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 8840.351659]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 8840.351662]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 8840.351665]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 8840.351667]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 8840.351668]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 8840.351670]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 8840.351673]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9111.674565] Raw Data: Unregistering Xilinx driver from kernel.
+[ 9111.674568] Raw Data: Buffers Transmitted 24060 Received 26240
+[ 9111.674570] TxSeqNo = 0, RxSeqNo = 26240
+[ 9111.675569] User unregister for handle ffff880209a981b8
+[ 9111.675570] Resetting DMA engine
+[ 9111.675578] While resetting engine, got 0 in eng status reg
+[ 9111.675579] Now checking all descriptors
+[ 9111.675580] ForceFromHw: HwCnt is 0
+[ 9111.675584] DMA driver user count is 1
+[ 9111.675585] User unregister for handle ffff880209a9a2b8
+[ 9111.675586] Resetting DMA engine
+[ 9111.675595] While resetting engine, got 0 in eng status reg
+[ 9111.675596] Now checking all descriptors
+[ 9111.675597] ForceFromHw: HwCnt is 0
+[ 9111.675599] DMA driver user count is 0
+[ 9111.675600] ---------------------------------------------------
+[ 9111.675601] Raw Data Driver results Summary:-
+[ 9111.675602] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 9111.675604] Buffers Transmitted = 24060, Buffers Received = 26240, Error Count = 0
+[ 9111.675605] TxSeqNo = 0, RxSeqNo = 26240
+[ 9111.675609] Data Mismatch Status = 0
+[ 9111.675610] ---------------------------------------------------
+[ 9112.672220] Freeing user buffers
+[ 9112.672622] Unregistering rawdata char device driver
+[ 9114.671333] Came to xdma_cleanup
+[ 9114.671346] Came to xdma_remove
+[ 9115.667819] While resetting engine, got 0 in eng status reg
+[ 9115.667827] While resetting engine, got 0 in eng status reg
+[ 9115.667834] While resetting engine, got 0 in eng status reg
+[ 9115.667842] While resetting engine, got 0 in eng status reg
+[ 9115.667854] Unregistering char device driver
+[ 9115.667871] xdma_driver 0000:01:00.0: PCI INT A disabled
+[ 9115.667888] User count 0
+[ 9115.667888] GUI user open? 0
+[ 9115.667890] XDMA: Unregistering Xilinx base DMA driver from kernel.
+[ 9115.672462] XDMA: Inserting Xilinx base DMA driver in kernel.
+[ 9115.672487] xdma_driver 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[ 9115.672497] xdma_driver 0000:01:00.0: setting latency timer to 64
+[ 9115.672503] guodebug: consistent 0
+[ 9115.672578] Hardware design version 10000131
+[ 9115.672580] S2C, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[ 9115.672589] While resetting engine, got 0 in eng status reg
+[ 9115.672591] S2C, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[ 9115.672599] While resetting engine, got 0 in eng status reg
+[ 9115.672655] C2S, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[ 9115.672663] While resetting engine, got 0 in eng status reg
+[ 9115.672665] C2S, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[ 9115.672674] While resetting engine, got 0 in eng status reg
+[ 9115.672728] Device registered with major number 250
+[ 9115.672730] End of probe
+[ 9116.674630] Raw Data Init: Inserting Xilinx driver in kernel.
+[ 9116.680636] Allocated 2000 buffers from ffff880204d0a000
+[ 9116.681070] Allocated 2000 buffers from ffff8802098aa000
+[ 9116.681072] Raw Data Init: Starting poll routine with aa55
+[ 9116.879597] Calling DmaRegister on engine 1 and 33
+[ 9116.879665] Handle for engine 1 is ffff8802094681b8
+[ 9116.879681] GetRxPkt: Came with wrong handle ffff88020946a2b8
+[ 9116.879682] Should be 0
+[ 9116.879686] Handle for engine 33 is ffff88020946a2b8
+[ 9118.680578] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9118.680582] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9118.680585] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9118.680588] Call Trace:
+[ 9118.680594]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9118.680599]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9118.680602]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 9118.680606]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 9118.680610]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9118.680613]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9118.680616]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9118.680620]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9119.678000] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9119.678004] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9119.678007] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9119.678008] Call Trace:
+[ 9119.678013]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9119.678016]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9119.678020]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 9119.678024]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 9119.678027]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9119.678029]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9119.678033]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9119.678036]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9119.678039]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9119.678042]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9119.678045]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9120.675392] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9120.675395] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9120.675397] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9120.675399] Call Trace:
+[ 9120.675403]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9120.675407]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9120.675410]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[ 9120.675413]  [<ffffffffa015fda2>] rawdata_dev_ioctl+0x195/0x217 [xrawdata_v6]
+[ 9120.675416]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9120.675419]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9120.675422]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9120.675425]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9120.675428]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9120.675431]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9120.675434]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9122.419225] For engine 1, TestMode 0
+[ 9122.419228] SetState TX with RawTestMode 0, reg value 0
+[ 9122.419229] Raw Data Driver: Stopping the test, mode 0
+[ 9122.419230] ========Reg 9108 = 0
+[ 9122.419231] ========Reg 9100 = 0
+[ 9122.419232] ---------------------------------------------------
+[ 9122.419233] Raw Data Driver results Summary:-
+[ 9122.419234] Current Run Min Packet Size = 64, Max Packet Size = 32768
+[ 9122.419236] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[ 9122.419237] TxSeqNo = 24060, RxSeqNo = 0
+[ 9122.419241] Data Mismatch Status = 0
+[ 9122.419242] ---------------------------------------------------
+[ 9122.419243] For engine 1, TestMode 8200
+[ 9122.419244] SetState TX with RawTestMode 8200, reg value 2
+[ 9122.419246] Raw Data Driver: Starting the test - mode 8200, reg 2
+[ 9122.419247] Reg 9104 = 1000
+[ 9122.419248] ========Reg 9104 = 4096
+[ 9122.419248] RxPktSize 4096
+[ 9122.419249] ========Reg 9108 = 2
+[ 9122.419250] ---------------------------------------------------
+[ 9122.419251] Raw Data Driver results Summary:-
+[ 9122.419252] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 9122.419253] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[ 9122.419255] TxSeqNo = 0, RxSeqNo = 0
+[ 9122.419259] Data Mismatch Status = 0
+[ 9122.419259] ---------------------------------------------------
+[ 9122.419268] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9122.419271] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9122.419273] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9122.419274] Call Trace:
+[ 9122.419280]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9122.419284]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9122.419286]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9122.419289]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9122.419291]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9122.419293]  [<ffffffff8112cd11>] ? mntput_no_expire+0x25/0xa4
+[ 9122.419296]  [<ffffffff811181b9>] ? fput+0x1de/0x1ed
+[ 9122.419298]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9122.419300]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9124.109625] For engine 1, TestMode 0
+[ 9124.109628] SetState TX with RawTestMode 0, reg value 2
+[ 9124.109629] Raw Data Driver: Stopping the test, mode 2
+[ 9124.109630] ========Reg 9108 = 2
+[ 9124.109631] ========Reg 9100 = 2
+[ 9124.109632] ---------------------------------------------------
+[ 9124.109633] Raw Data Driver results Summary:-
+[ 9124.109635] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 9124.109636] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[ 9124.109637] TxSeqNo = 24000, RxSeqNo = 2000
+[ 9124.109642] Data Mismatch Status = 0
+[ 9124.109642] ---------------------------------------------------
+[ 9124.109644] For engine 1, TestMode 8200
+[ 9124.109645] SetState TX with RawTestMode 8200, reg value 2
+[ 9124.109646] Raw Data Driver: Starting the test - mode 8200, reg 2
+[ 9124.109647] Reg 9104 = 1000
+[ 9124.109648] ========Reg 9104 = 4096
+[ 9124.109649] RxPktSize 4096
+[ 9124.109650] ========Reg 9108 = 2
+[ 9124.109650] ---------------------------------------------------
+[ 9124.109651] Raw Data Driver results Summary:-
+[ 9124.109652] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[ 9124.109654] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[ 9124.109655] TxSeqNo = 0, RxSeqNo = 0
+[ 9124.109659] Data Mismatch Status = 0
+[ 9124.109660] ---------------------------------------------------
+[ 9124.109662] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9124.109664] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9124.109666] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9124.109667] Call Trace:
+[ 9124.109674]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9124.109677]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9124.109679]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9124.109682]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9124.109684]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9124.109687]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9124.109689]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9124.109691]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9124.109693]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9124.109695]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9125.106513] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9125.106516] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9125.106523] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9125.106525] Call Trace:
+[ 9125.106533]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9125.106538]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9125.106541]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9125.106545]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9125.106548]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9125.106552]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9125.106555]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9125.106558]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9125.106561]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9125.106564]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9126.104387] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9126.104391] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9126.104393] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9126.104394] Call Trace:
+[ 9126.104400]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9126.104403]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9126.104405]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9126.104408]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9126.104410]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9126.104413]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9126.104415]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9126.104417]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9126.104419]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9126.104421]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9127.101158] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9127.101161] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9127.101164] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9127.101165] Call Trace:
+[ 9127.101172]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9127.101175]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9127.101177]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9127.101180]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9127.101182]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9127.101185]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9127.101187]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9127.101189]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9127.101191]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9127.101194]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9128.098137] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9128.098141] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9128.098143] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9128.098145] Call Trace:
+[ 9128.098150]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9128.098153]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9128.098156]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9128.098158]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9128.098161]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9128.098164]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9128.098166]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9128.098167]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9128.098169]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9128.098172]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9129.095170] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9129.095173] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9129.095176] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9129.095177] Call Trace:
+[ 9129.095183]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9129.095186]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9129.095188]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9129.095191]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9129.095193]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9129.095196]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9129.095198]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9129.095200]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9129.095202]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9129.095204]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9130.093189] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9130.093193] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9130.093195] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9130.093196] Call Trace:
+[ 9130.093203]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9130.093206]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9130.093209]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9130.093211]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9130.093213]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9130.093216]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9130.093219]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9130.093220]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9130.093222]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9130.093225]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9131.090532] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9131.090536] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9131.090538] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9131.090540] Call Trace:
+[ 9131.090546]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9131.090549]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9131.090551]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9131.090554]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9131.090556]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9131.090559]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9131.090562]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9131.090563]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9131.090565]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9131.090568]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9132.087647] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9132.087651] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9132.087653] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9132.087655] Call Trace:
+[ 9132.087661]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9132.087664]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9132.087666]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9132.087669]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9132.087671]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9132.087674]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9132.087676]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9132.087678]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9132.087680]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9132.087683]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9133.084760] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9133.084764] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9133.084766] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9133.084767] Call Trace:
+[ 9133.084774]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9133.084777]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9133.084779]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9133.084782]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9133.084784]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9133.084787]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9133.084789]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9133.084791]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9133.084793]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9133.084795]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9134.081783] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9134.081786] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9134.081789] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9134.081790] Call Trace:
+[ 9134.081797]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9134.081800]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9134.081802]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9134.081805]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9134.081807]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9134.081810]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9134.081812]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9134.081814]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9134.081816]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9134.081818]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9135.078728] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9135.078731] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9135.078734] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9135.078735] Call Trace:
+[ 9135.078742]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9135.078745]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9135.078747]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9135.078750]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9135.078752]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9135.078755]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9135.078757]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9135.078759]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9135.078761]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9135.078763]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9136.075696] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9136.075699] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9136.075702] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9136.075703] Call Trace:
+[ 9136.075709]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9136.075713]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9136.075715]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9136.075718]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9136.075720]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9136.075723]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9136.075725]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9136.075727]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9136.075729]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9136.075731]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9137.073000] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9137.073004] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9137.073006] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9137.073007] Call Trace:
+[ 9137.073013]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9137.073017]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9137.073019]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9137.073022]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9137.073024]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9137.073027]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9137.073029]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9137.073031]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9137.073033]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9137.073035]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9138.071058] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9138.071061] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9138.071064] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9138.071065] Call Trace:
+[ 9138.071071]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9138.071074]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9138.071076]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9138.071079]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9138.071081]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9138.071084]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9138.071086]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9138.071088]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9138.071090]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9138.071092]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9139.067509] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9139.067513] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9139.067515] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9139.067516] Call Trace:
+[ 9139.067522]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9139.067525]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9139.067528]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9139.067531]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9139.067533]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9139.067536]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9139.067538]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9139.067539]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9139.067541]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9139.067544]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9140.064811] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9140.064815] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9140.064817] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9140.064818] Call Trace:
+[ 9140.064825]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9140.064828]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9140.064830]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9140.064833]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9140.064835]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9140.064838]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9140.064840]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9140.064842]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9140.064844]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9140.064846]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9141.062721] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9141.062724] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9141.062727] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9141.062728] Call Trace:
+[ 9141.062735]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9141.062738]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9141.062741]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9141.062743]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9141.062745]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9141.062749]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9141.062751]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9141.062752]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9141.062754]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9141.062757]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9142.059848] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9142.059852] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9142.059854] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9142.059856] Call Trace:
+[ 9142.059862]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9142.059865]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9142.059867]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9142.059870]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9142.059872]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9142.059875]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9142.059877]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9142.059879]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9142.059881]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9142.059884]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9143.056444] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9143.056447] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9143.056450] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9143.056451] Call Trace:
+[ 9143.056457]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9143.056460]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9143.056462]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9143.056465]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9143.056467]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9143.056470]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9143.056472]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9143.056474]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9143.056476]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9143.056479]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9144.054472] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9144.054476] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9144.054478] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9144.054480] Call Trace:
+[ 9144.054485]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9144.054489]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9144.054491]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9144.054494]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9144.054496]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9144.054499]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9144.054501]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9144.054503]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9144.054505]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9144.054507]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9145.052655] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9145.052659] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9145.052661] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9145.052663] Call Trace:
+[ 9145.052669]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9145.052673]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9145.052675]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9145.052678]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9145.052680]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9145.052683]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9145.052685]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9145.052686]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9145.052689]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9145.052691]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9146.050220] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9146.050224] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9146.050226] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9146.050228] Call Trace:
+[ 9146.050234]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9146.050237]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9146.050240]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9146.050242]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9146.050245]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9146.050248]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9146.050250]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9146.050251]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9146.050253]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9146.050256]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9147.047306] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9147.047309] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9147.047311] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9147.047313] Call Trace:
+[ 9147.047319]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9147.047322]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9147.047325]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9147.047327]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9147.047330]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9147.047333]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9147.047335]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9147.047341]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9147.047344]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9147.047347]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9148.044412] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9148.044416] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9148.044418] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9148.044419] Call Trace:
+[ 9148.044426]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9148.044429]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9148.044432]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9148.044434]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9148.044436]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9148.044440]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9148.044442]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9148.044443]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9148.044446]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9148.044448]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9149.042464] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9149.042467] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9149.042470] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9149.042471] Call Trace:
+[ 9149.042477]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9149.042480]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9149.042482]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9149.042485]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9149.042487]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9149.042490]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9149.042492]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9149.042494]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9149.042496]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9149.042498]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9150.039818] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9150.039821] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9150.039824] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9150.039825] Call Trace:
+[ 9150.039831]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9150.039834]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9150.039836]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9150.039839]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9150.039841]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9150.039844]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9150.039846]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9150.039848]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9150.039850]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9150.039853]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9151.038044] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9151.038048] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9151.038050] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9151.038051] Call Trace:
+[ 9151.038057]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9151.038061]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9151.038063]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9151.038066]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9151.038068]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9151.038071]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9151.038073]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9151.038075]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9151.038077]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9151.038079]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9152.036017] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9152.036020] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9152.036022] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9152.036023] Call Trace:
+[ 9152.036029]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9152.036032]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9152.036035]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9152.036037]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9152.036040]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9152.036043]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9152.036045]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9152.036046]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9152.036048]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9152.036051]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9153.033288] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9153.033291] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9153.033294] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9153.033295] Call Trace:
+[ 9153.033302]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9153.033305]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9153.033307]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9153.033310]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9153.033312]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9153.033315]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9153.033317]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9153.033319]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9153.033321]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9153.033324]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9154.030588] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[ 9154.030592] in_atomic(): 1, irqs_disabled(): 0, pid: 446, name: ml605_api_test
+[ 9154.030594] Pid: 446, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[ 9154.030595] Call Trace:
+[ 9154.030602]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[ 9154.030605]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[ 9154.030607]  [<ffffffffa015fd4d>] rawdata_dev_ioctl+0x140/0x217 [xrawdata_v6]
+[ 9154.030610]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[ 9154.030617]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[ 9154.030621]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[ 9154.030624]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[ 9154.030627]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[ 9154.030629]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[ 9154.030633]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[ 9440.329666] e1000e: eth1 NIC Link is Down
+[10380.843987] Raw Data: Unregistering Xilinx driver from kernel.
+[10380.843990] Raw Data: Buffers Transmitted 1925880 Received 2000
+[10380.843991] TxSeqNo = 42812, RxSeqNo = 0
+[10380.844990] User unregister for handle ffff8802094681b8
+[10380.844991] Resetting DMA engine
+[10380.845000] While resetting engine, got 0 in eng status reg
+[10380.845001] Now checking all descriptors
+[10380.845002] ForceFromHw: HwCnt is 0
+[10380.845006] DMA driver user count is 1
+[10380.845007] User unregister for handle ffff88020946a2b8
+[10380.845007] Resetting DMA engine
+[10380.845017] While resetting engine, got 0 in eng status reg
+[10380.845018] Now checking all descriptors
+[10380.845019] ForceFromHw: HwCnt is 0
+[10380.845020] DMA driver user count is 0
+[10380.845021] ---------------------------------------------------
+[10380.845022] Raw Data Driver results Summary:-
+[10380.845024] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10380.845025] Buffers Transmitted = 1925880, Buffers Received = 2000, Error Count = 0
+[10380.845026] TxSeqNo = 42812, RxSeqNo = 0
+[10380.845031] Data Mismatch Status = 0
+[10380.845031] ---------------------------------------------------
+[10381.842072] Freeing user buffers
+[10381.842484] Unregistering rawdata char device driver
+[10383.840991] Came to xdma_cleanup
+[10383.841002] Came to xdma_remove
+[10384.838118] While resetting engine, got 0 in eng status reg
+[10384.838126] While resetting engine, got 0 in eng status reg
+[10384.838134] While resetting engine, got 0 in eng status reg
+[10384.838140] While resetting engine, got 0 in eng status reg
+[10384.838152] Unregistering char device driver
+[10384.838169] xdma_driver 0000:01:00.0: PCI INT A disabled
+[10384.838188] User count 0
+[10384.838189] GUI user open? 0
+[10384.838190] XDMA: Unregistering Xilinx base DMA driver from kernel.
+[10384.842733] XDMA: Inserting Xilinx base DMA driver in kernel.
+[10384.842760] xdma_driver 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[10384.842777] xdma_driver 0000:01:00.0: setting latency timer to 64
+[10384.842782] guodebug: consistent 0
+[10384.842844] Hardware design version 10000131
+[10384.842846] S2C, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[10384.842855] While resetting engine, got 0 in eng status reg
+[10384.842857] S2C, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[10384.842866] While resetting engine, got 0 in eng status reg
+[10384.842922] C2S, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[10384.842931] While resetting engine, got 0 in eng status reg
+[10384.842933] C2S, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[10384.842942] While resetting engine, got 0 in eng status reg
+[10384.842996] Device registered with major number 250
+[10384.842997] End of probe
+[10385.844885] Raw Data Init: Inserting Xilinx driver in kernel.
+[10385.850438] Allocated 2000 buffers from ffff8801932db000
+[10385.850868] Allocated 2000 buffers from ffff88020c69b000
+[10385.850871] Raw Data Init: Starting poll routine with aa55
+[10386.049416] Calling DmaRegister on engine 1 and 33
+[10386.049484] Handle for engine 1 is ffff8802094681b8
+[10386.049501] GetRxPkt: Came with wrong handle ffff88020946a2b8
+[10386.049502] Should be 0
+[10386.049508] Handle for engine 33 is ffff88020946a2b8
+[10387.850352] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10387.850355] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10387.850358] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10387.850359] Call Trace:
+[10387.850365]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10387.850369]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10387.850371]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10387.850373]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10387.850376]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10387.850378]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10387.850379]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10387.850382]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10388.847715] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10388.847718] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10388.847720] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10388.847721] Call Trace:
+[10388.847726]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10388.847729]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10388.847732]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10388.847734]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10388.847736]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10388.847738]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10388.847742]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10388.847744]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10388.847745]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10388.847747]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10388.847750]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10389.845114] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10389.845117] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10389.845119] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10389.845120] Call Trace:
+[10389.845124]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10389.845126]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10389.845128]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10389.845131]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10389.845133]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10389.845134]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10389.845137]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10389.845139]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10389.845140]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10389.845142]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10389.845144]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10391.316044] For engine 1, TestMode 0
+[10391.316047] SetState TX with RawTestMode 0, reg value 0
+[10391.316049] Raw Data Driver: Stopping the test, mode 0
+[10391.316050] ========Reg 9108 = 0
+[10391.316051] ========Reg 9100 = 0
+[10391.316052] ---------------------------------------------------
+[10391.316053] Raw Data Driver results Summary:-
+[10391.316054] Current Run Min Packet Size = 64, Max Packet Size = 32768
+[10391.316055] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[10391.316056] TxSeqNo = 24060, RxSeqNo = 0
+[10391.316061] Data Mismatch Status = 0
+[10391.316061] ---------------------------------------------------
+[10391.316063] For engine 1, TestMode 8200
+[10391.316064] SetState TX with RawTestMode 8200, reg value 2
+[10391.316065] Raw Data Driver: Starting the test - mode 8200, reg 2
+[10391.316066] Reg 9104 = 1000
+[10391.316067] ========Reg 9104 = 4096
+[10391.316068] RxPktSize 4096
+[10391.316069] ========Reg 9108 = 2
+[10391.316070] ---------------------------------------------------
+[10391.316071] Raw Data Driver results Summary:-
+[10391.316072] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10391.316073] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[10391.316074] TxSeqNo = 0, RxSeqNo = 0
+[10391.316078] Data Mismatch Status = 0
+[10391.316079] ---------------------------------------------------
+[10391.316089] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10391.316091] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10391.316094] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10391.316095] Call Trace:
+[10391.316101]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10391.316105]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10391.316107]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10391.316109]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10391.316111]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10391.316114]  [<ffffffff8112cd11>] ? mntput_no_expire+0x25/0xa4
+[10391.316117]  [<ffffffff811181b9>] ? fput+0x1de/0x1ed
+[10391.316118]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10391.316121]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10392.313480] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10392.313483] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10392.313486] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10392.313487] Call Trace:
+[10392.313493]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10392.313497]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10392.313499]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10392.313501]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10392.313504]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10392.313507]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10392.313509]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10392.313510]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10392.313513]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10392.313515]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10393.467815] For engine 1, TestMode 0
+[10393.467818] SetState TX with RawTestMode 0, reg value 2
+[10393.467819] Raw Data Driver: Stopping the test, mode 2
+[10393.467820] ========Reg 9108 = 2
+[10393.467821] ========Reg 9100 = 2
+[10393.467822] ---------------------------------------------------
+[10393.467823] Raw Data Driver results Summary:-
+[10393.467824] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10393.467826] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[10393.467827] TxSeqNo = 24000, RxSeqNo = 2000
+[10393.467831] Data Mismatch Status = 0
+[10393.467832] ---------------------------------------------------
+[10393.467833] For engine 1, TestMode 8200
+[10393.467834] SetState TX with RawTestMode 8200, reg value 2
+[10393.467836] Raw Data Driver: Starting the test - mode 8200, reg 2
+[10393.467837] Reg 9104 = 1000
+[10393.467837] ========Reg 9104 = 4096
+[10393.467838] RxPktSize 4096
+[10393.467839] ========Reg 9108 = 2
+[10393.467840] ---------------------------------------------------
+[10393.467841] Raw Data Driver results Summary:-
+[10393.467842] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10393.467843] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[10393.467845] TxSeqNo = 0, RxSeqNo = 0
+[10393.467849] Data Mismatch Status = 0
+[10393.467850] ---------------------------------------------------
+[10393.467851] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10393.467853] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10393.467856] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10393.467857] Call Trace:
+[10393.467863]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10393.467866]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10393.467868]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10393.467871]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10393.467873]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10393.467876]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10393.467878]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10393.467879]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10393.467881]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10393.467884]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10394.464725] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10394.464729] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10394.464731] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10394.464733] Call Trace:
+[10394.464739]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10394.464743]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10394.464745]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10394.464748]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10394.464750]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10394.464754]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10394.464756]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10394.464757]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10394.464760]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10394.464762]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10395.462012] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10395.462015] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10395.462017] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10395.462019] Call Trace:
+[10395.462025]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10395.462028]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10395.462030]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10395.462033]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10395.462036]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10395.462039]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10395.462041]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10395.462043]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10395.462045]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10395.462047]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10396.459275] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10396.459279] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10396.459281] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10396.459282] Call Trace:
+[10396.459289]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10396.459293]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10396.459295]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10396.459298]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10396.459300]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10396.459303]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10396.459305]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10396.459306]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10396.459309]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10396.459311]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10397.457129] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10397.457134] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10397.457137] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10397.457139] Call Trace:
+[10397.457146]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10397.457150]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10397.457154]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10397.457158]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10397.457160]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10397.457164]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10397.457166]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10397.457168]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10397.457170]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10397.457173]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10398.454062] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10398.454066] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10398.454068] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10398.454069] Call Trace:
+[10398.454075]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10398.454079]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10398.454081]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10398.454084]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10398.454086]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10398.454089]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10398.454091]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10398.454093]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10398.454095]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10398.454098]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10399.450904] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10399.450911] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10399.450914] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10399.450916] Call Trace:
+[10399.450923]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10399.450928]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10399.450931]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10399.450934]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10399.450937]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10399.450941]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10399.450944]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10399.450947]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10399.450950]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10399.450953]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10400.101847] BUG: scheduling while atomic: ml605_api_test/1713/0x10000100
+[10400.101850] Modules linked in: xrawdata_v6 xdma_v6 usb_storage fuse sunrpc ipv6 uinput snd_hda_codec_intelhdmi snd_hda_codec_realtek snd_hda_intel snd_hda_codec serio_raw snd_hwdep snd_seq snd_seq_device snd_pcm i2c_i801 snd_timer iTCO_wdt iTCO_vendor_support e1000e tpm_infineon snd soundcore snd_page_alloc hp_wmi rfkill wmi microcode i915 drm_kms_helper drm i2c_algo_bit i2c_core video output [last unloaded: xdma_v6]
+[10400.101871] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10400.101872] Call Trace:
+[10400.101878]  [<ffffffff8103feb4>] __schedule_bug+0x5f/0x64
+[10400.101882]  [<ffffffff8146755e>] schedule+0xd9/0x5cc
+[10400.101886]  [<ffffffff810534ab>] ? local_bh_enable_ip+0xe/0x10
+[10400.101889]  [<ffffffff81049050>] __cond_resched+0x2a/0x35
+[10400.101890]  [<ffffffff81467b12>] _cond_resched+0x1b/0x22
+[10400.101894]  [<ffffffffa015fa50>] might_fault+0x21/0x23 [xrawdata_v6]
+[10400.101896]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10400.101899]  [<ffffffffa015ff25>] rawdata_dev_write+0xf3/0x1bf [xrawdata_v6]
+[10400.101903]  [<ffffffff81117004>] vfs_write+0xac/0x100
+[10400.101905]  [<ffffffff8111720d>] sys_write+0x4a/0x6e
+[10400.101907]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10400.447973] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10400.447976] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10400.447979] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10400.447980] Call Trace:
+[10400.447986]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10400.447990]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10400.447992]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10400.447995]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10400.447997]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10400.448000]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10400.448002]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10400.448004]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10400.448006]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10400.448008]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10401.445257] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10401.445261] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10401.445263] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10401.445265] Call Trace:
+[10401.445271]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10401.445274]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10401.445277]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10401.445279]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10401.445281]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10401.445285]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10401.445287]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10401.445288]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10401.445290]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10401.445293]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10402.443293] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10402.443297] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10402.443299] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10402.443300] Call Trace:
+[10402.443307]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10402.443311]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10402.443318]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10402.443321]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10402.443324]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10402.443329]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10402.443332]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10402.443334]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10402.443337]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10402.443340]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10403.440211] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10403.440214] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10403.440217] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10403.440218] Call Trace:
+[10403.440224]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10403.440228]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10403.440230]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10403.440233]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10403.440235]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10403.440238]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10403.440240]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10403.440242]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10403.440244]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10403.440247]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10404.437584] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10404.437587] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10404.437590] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10404.437591] Call Trace:
+[10404.437597]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10404.437601]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10404.437603]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10404.437605]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10404.437608]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10404.437611]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10404.437613]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10404.437614]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10404.437617]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10404.437619]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10405.434485] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10405.434488] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10405.434490] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10405.434492] Call Trace:
+[10405.434498]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10405.434502]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10405.434504]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10405.434507]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10405.434509]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10405.434512]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10405.434514]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10405.434516]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10405.434518]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10405.434520]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10406.431656] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10406.431659] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10406.431661] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10406.431662] Call Trace:
+[10406.431669]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10406.431673]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10406.431675]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10406.431677]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10406.431679]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10406.431683]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10406.431685]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10406.431687]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10406.431689]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10406.431691]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10407.429156] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10407.429159] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10407.429162] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10407.429163] Call Trace:
+[10407.429169]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10407.429173]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10407.429175]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10407.429178]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10407.429180]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10407.429183]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10407.429186]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10407.429187]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10407.429189]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10407.429192]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10408.425694] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10408.425697] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10408.425700] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10408.425701] Call Trace:
+[10408.425707]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10408.425710]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10408.425713]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10408.425715]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10408.425717]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10408.425721]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10408.425723]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10408.425724]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10408.425727]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10408.425729]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10409.423461] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10409.423464] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10409.423466] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10409.423468] Call Trace:
+[10409.423475]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10409.423478]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10409.423480]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10409.423483]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10409.423485]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10409.423488]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10409.423490]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10409.423492]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10409.423494]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10409.423496]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10410.420350] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10410.420353] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10410.420356] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10410.420357] Call Trace:
+[10410.420363]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10410.420367]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10410.420369]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10410.420371]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10410.420373]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10410.420377]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10410.420379]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10410.420380]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10410.420382]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10410.420385]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10411.418113] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10411.418116] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10411.418119] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10411.418120] Call Trace:
+[10411.418126]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10411.418129]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10411.418131]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10411.418134]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10411.418136]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10411.418140]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10411.418142]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10411.418143]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10411.418146]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10411.418148]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10412.415124] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10412.415127] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10412.415130] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10412.415131] Call Trace:
+[10412.415137]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10412.415141]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10412.415143]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10412.415146]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10412.415148]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10412.415151]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10412.415153]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10412.415155]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10412.415157]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10412.415159]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10413.412383] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10413.412386] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10413.412388] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10413.412390] Call Trace:
+[10413.412396]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10413.412400]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10413.412402]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10413.412405]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10413.412407]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10413.412410]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10413.412412]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10413.412414]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10413.412416]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10413.412418]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10414.409854] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10414.409857] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10414.409860] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10414.409861] Call Trace:
+[10414.409867]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10414.409871]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10414.409873]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10414.409875]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10414.409878]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10414.409881]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10414.409883]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10414.409884]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10414.409886]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10414.409889]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10415.406205] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10415.406208] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10415.406211] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10415.406212] Call Trace:
+[10415.406218]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10415.406222]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10415.406224]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10415.406227]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10415.406229]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10415.406232]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10415.406234]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10415.406236]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10415.406238]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10415.406240]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10416.403891] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10416.403895] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10416.403897] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10416.403898] Call Trace:
+[10416.403904]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10416.403908]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10416.403910]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10416.403913]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10416.403915]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10416.403918]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10416.403920]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10416.403922]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10416.403924]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10416.403926]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10417.400910] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10417.400913] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10417.400915] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10417.400917] Call Trace:
+[10417.400923]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10417.400926]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10417.400929]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10417.400931]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10417.400933]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10417.400936]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10417.400939]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10417.400940]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10417.400942]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10417.400945]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10418.398842] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10418.398845] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10418.398847] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10418.398849] Call Trace:
+[10418.398855]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10418.398858]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10418.398861]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10418.398863]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10418.398865]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10418.398869]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10418.398871]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10418.398872]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10418.398874]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10418.398877]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10419.397079] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10419.397083] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10419.397085] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10419.397087] Call Trace:
+[10419.397093]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10419.397096]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10419.397099]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10419.397101]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10419.397103]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10419.397106]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10419.397108]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10419.397110]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10419.397112]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10419.397115]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10420.395243] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10420.395246] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10420.395249] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10420.395254] Call Trace:
+[10420.395262]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10420.395266]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10420.395270]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10420.395273]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10420.395276]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10420.395280]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10420.395283]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10420.395286]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10420.395289]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10420.395292]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10421.391825] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10421.391829] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10421.391831] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10421.391832] Call Trace:
+[10421.391839]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10421.391842]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10421.391845]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10421.391848]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10421.391850]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10421.391853]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10421.391855]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10421.391857]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10421.391859]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10421.391861]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10422.389427] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10422.389431] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10422.389433] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10422.389434] Call Trace:
+[10422.389441]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10422.389444]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10422.389447]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10422.389449]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10422.389452]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10422.389455]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10422.389457]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10422.389458]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10422.389461]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10422.389463]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10423.386900] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10423.386904] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10423.386906] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10423.386910] Call Trace:
+[10423.386918]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10423.386923]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10423.386926]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10423.386929]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10423.386932]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10423.386936]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10423.386939]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10423.386942]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10423.386945]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10423.386948]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10424.383553] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10424.383556] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10424.383558] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10424.383560] Call Trace:
+[10424.383566]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10424.383569]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10424.383572]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10424.383575]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10424.383577]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10424.383580]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10424.383582]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10424.383584]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10424.383586]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10424.383588]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10425.381299] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10425.381302] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10425.381304] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10425.381306] Call Trace:
+[10425.381312]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10425.381316]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10425.381318]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10425.381321]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10425.381323]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10425.381326]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10425.381328]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10425.381330]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10425.381332]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10425.381335]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10426.378243] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10426.378246] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10426.378248] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10426.378250] Call Trace:
+[10426.378256]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10426.378259]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10426.378262]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10426.378264]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10426.378267]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10426.378270]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10426.378272]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10426.378274]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10426.378276]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10426.378278]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10427.375501] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10427.375504] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10427.375506] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10427.375508] Call Trace:
+[10427.375514]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10427.375517]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10427.375519]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10427.375522]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10427.375524]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10427.375527]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10427.375529]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10427.375531]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10427.375533]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10427.375535]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10428.372376] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10428.372379] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10428.372381] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10428.372383] Call Trace:
+[10428.372390]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10428.372393]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10428.372395]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10428.372398]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10428.372400]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10428.372404]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10428.372406]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10428.372407]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10428.372409]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10428.372412]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10429.369980] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10429.369984] in_atomic(): 1, irqs_disabled(): 0, pid: 1713, name: ml605_api_test
+[10429.369986] Pid: 1713, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10429.369987] Call Trace:
+[10429.369994]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10429.369997]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10429.369999]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10429.370002]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10429.370004]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10429.370008]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10429.370010]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10429.370011]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10429.370013]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10429.370016]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10450.532608] Raw Data: Unregistering Xilinx driver from kernel.
+[10450.532611] Raw Data: Buffers Transmitted 2283780 Received 2000
+[10450.532613] TxSeqNo = 7496, RxSeqNo = 0
+[10450.533612] User unregister for handle ffff8802094681b8
+[10450.533614] Resetting DMA engine
+[10450.533622] While resetting engine, got 0 in eng status reg
+[10450.533624] Now checking all descriptors
+[10450.533625] ForceFromHw: HwCnt is 0
+[10450.533631] DMA driver user count is 1
+[10450.533632] User unregister for handle ffff88020946a2b8
+[10450.533633] Resetting DMA engine
+[10450.533643] While resetting engine, got 0 in eng status reg
+[10450.533644] Now checking all descriptors
+[10450.533645] ForceFromHw: HwCnt is 0
+[10450.533646] DMA driver user count is 0
+[10450.533647] ---------------------------------------------------
+[10450.533648] Raw Data Driver results Summary:-
+[10450.533650] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10450.533651] Buffers Transmitted = 2283780, Buffers Received = 2000, Error Count = 0
+[10450.533652] TxSeqNo = 7496, RxSeqNo = 0
+[10450.533657] Data Mismatch Status = 0
+[10450.533657] ---------------------------------------------------
+[10451.530029] Freeing user buffers
+[10451.530433] Unregistering rawdata char device driver
+[10453.529058] Came to xdma_cleanup
+[10453.529070] Came to xdma_remove
+[10454.525811] While resetting engine, got 0 in eng status reg
+[10454.525819] While resetting engine, got 0 in eng status reg
+[10454.525826] While resetting engine, got 0 in eng status reg
+[10454.525834] While resetting engine, got 0 in eng status reg
+[10454.525846] Unregistering char device driver
+[10454.525862] xdma_driver 0000:01:00.0: PCI INT A disabled
+[10454.525880] User count 0
+[10454.525881] GUI user open? 0
+[10454.525883] XDMA: Unregistering Xilinx base DMA driver from kernel.
+[10454.530562] XDMA: Inserting Xilinx base DMA driver in kernel.
+[10454.530589] xdma_driver 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[10454.530599] xdma_driver 0000:01:00.0: setting latency timer to 64
+[10454.530604] guodebug: consistent 0
+[10454.530651] Hardware design version 10000131
+[10454.530654] S2C, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[10454.530662] While resetting engine, got 0 in eng status reg
+[10454.530664] S2C, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[10454.530673] While resetting engine, got 0 in eng status reg
+[10454.530726] C2S, Packet DMA, Eng. Number 0, Max Byte Count 2^20
+[10454.530735] While resetting engine, got 0 in eng status reg
+[10454.530737] C2S, Packet DMA, Eng. Number 1, Max Byte Count 2^20
+[10454.530746] While resetting engine, got 0 in eng status reg
+[10454.530800] Device registered with major number 250
+[10454.530801] End of probe
+[10455.532554] Raw Data Init: Inserting Xilinx driver in kernel.
+[10455.539084] Allocated 2000 buffers from ffff88020a2b8000
+[10455.539526] Allocated 2000 buffers from ffff88020c512000
+[10455.539529] Raw Data Init: Starting poll routine with aa55
+[10455.737713] Calling DmaRegister on engine 1 and 33
+[10455.737752] Handle for engine 1 is ffff88020c7b81b8
+[10455.737769] GetRxPkt: Came with wrong handle ffff88020c7ba2b8
+[10455.737770] Should be 0
+[10455.737776] Handle for engine 33 is ffff88020c7ba2b8
+[10457.538913] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10457.538916] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10457.538918] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10457.538920] Call Trace:
+[10457.538926]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10457.538929]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10457.538931]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10457.538934]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10457.538936]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10457.538938]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10457.538940]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10457.538943]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10458.536298] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10458.536301] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10458.536303] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10458.536304] Call Trace:
+[10458.536308]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10458.536311]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10458.536313]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10458.536315]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10458.536317]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10458.536319]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10458.536322]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10458.536324]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10458.536326]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10458.536328]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10458.536330]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10459.533722] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10459.533724] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10459.533726] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10459.533728] Call Trace:
+[10459.533731]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10459.533734]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10459.533736]  [<ffffffffa015fbfa>] copy_from_user+0x1e/0x31 [xrawdata_v6]
+[10459.533738]  [<ffffffffa015fdb0>] rawdata_dev_ioctl+0x1a3/0x225 [xrawdata_v6]
+[10459.533740]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10459.533742]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10459.533744]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10459.533746]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10459.533748]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10459.533750]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10459.533751]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10460.993335] For engine 1, TestMode 0
+[10460.993338] SetState TX with RawTestMode 0, reg value 0
+[10460.993339] Raw Data Driver: Stopping the test, mode 0
+[10460.993340] ========Reg 9108 = 0
+[10460.993341] ========Reg 9100 = 0
+[10460.993342] ---------------------------------------------------
+[10460.993343] Raw Data Driver results Summary:-
+[10460.993344] Current Run Min Packet Size = 64, Max Packet Size = 32768
+[10460.993346] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[10460.993347] TxSeqNo = 24060, RxSeqNo = 0
+[10460.993351] Data Mismatch Status = 0
+[10460.993352] ---------------------------------------------------
+[10460.993354] For engine 1, TestMode 8200
+[10460.993355] SetState TX with RawTestMode 8200, reg value 2
+[10460.993356] Raw Data Driver: Starting the test - mode 8200, reg 2
+[10460.993357] Reg 9104 = 1000
+[10460.993358] ========Reg 9104 = 4096
+[10460.993358] RxPktSize 4096
+[10460.993359] ========Reg 9108 = 2
+[10460.993360] ---------------------------------------------------
+[10460.993361] Raw Data Driver results Summary:-
+[10460.993362] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10460.993363] Buffers Transmitted = 24060, Buffers Received = 0, Error Count = 0
+[10460.993365] TxSeqNo = 0, RxSeqNo = 0
+[10460.993369] Data Mismatch Status = 0
+[10460.993370] ---------------------------------------------------
+[10460.993380] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10460.993382] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10460.993384] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10460.993385] Call Trace:
+[10460.993391]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10460.993395]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10460.993397]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10460.993400]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10460.993402]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10460.993404]  [<ffffffff8112cd11>] ? mntput_no_expire+0x25/0xa4
+[10460.993407]  [<ffffffff811181b9>] ? fput+0x1de/0x1ed
+[10460.993409]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10460.993411]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10461.991334] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10461.991337] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10461.991340] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10461.991341] Call Trace:
+[10461.991347]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10461.991351]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10461.991353]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10461.991356]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10461.991358]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10461.991361]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10461.991363]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10461.991365]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10461.991367]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10461.991370]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10463.266378] For engine 1, TestMode 0
+[10463.266380] SetState TX with RawTestMode 0, reg value 2
+[10463.266382] Raw Data Driver: Stopping the test, mode 2
+[10463.266383] ========Reg 9108 = 2
+[10463.266384] ========Reg 9100 = 2
+[10463.266385] ---------------------------------------------------
+[10463.266386] Raw Data Driver results Summary:-
+[10463.266387] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10463.266388] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[10463.266389] TxSeqNo = 24000, RxSeqNo = 2000
+[10463.266394] Data Mismatch Status = 0
+[10463.266394] ---------------------------------------------------
+[10463.266396] For engine 1, TestMode 8200
+[10463.266397] SetState TX with RawTestMode 8200, reg value 2
+[10463.266398] Raw Data Driver: Starting the test - mode 8200, reg 2
+[10463.266399] Reg 9104 = 1000
+[10463.266400] ========Reg 9104 = 4096
+[10463.266401] RxPktSize 4096
+[10463.266402] ========Reg 9108 = 2
+[10463.266403] ---------------------------------------------------
+[10463.266403] Raw Data Driver results Summary:-
+[10463.266405] Current Run Min Packet Size = 4096, Max Packet Size = 4096
+[10463.266406] Buffers Transmitted = 48060, Buffers Received = 2000, Error Count = 0
+[10463.266407] TxSeqNo = 0, RxSeqNo = 0
+[10463.266411] Data Mismatch Status = 0
+[10463.266412] ---------------------------------------------------
+[10463.266414] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10463.266416] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10463.266418] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10463.266420] Call Trace:
+[10463.266426]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10463.266429]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10463.266431]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10463.266434]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10463.266436]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10463.266439]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10463.266441]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10463.266443]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10463.266445]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10463.266448]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10464.263780] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10464.263783] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10464.263786] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10464.263787] Call Trace:
+[10464.263793]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10464.263797]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10464.263799]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10464.263801]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10464.263803]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10464.263807]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10464.263809]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10464.263810]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10464.263812]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10464.263815]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10465.260194] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10465.260198] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10465.260200] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10465.260201] Call Trace:
+[10465.260208]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10465.260211]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10465.260213]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10465.260216]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10465.260218]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10465.260221]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10465.260223]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10465.260225]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10465.260227]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10465.260230]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10466.258252] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10466.258256] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10466.258258] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10466.258259] Call Trace:
+[10466.258266]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10466.258270]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10466.258272]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10466.258275]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10466.258277]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10466.258280]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10466.258282]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10466.258284]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10466.258286]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10466.258288]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10467.255082] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10467.255085] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10467.255087] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10467.255089] Call Trace:
+[10467.255095]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10467.255099]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10467.255101]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10467.255104]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10467.255106]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10467.255109]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10467.255111]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10467.255113]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10467.255115]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10467.255117]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10468.252514] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10468.252518] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10468.252520] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10468.252522] Call Trace:
+[10468.252530]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10468.252534]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10468.252536]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10468.252539]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10468.252542]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10468.252545]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10468.252547]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10468.252549]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10468.252552]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10468.252555]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10469.249271] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10469.249273] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10469.249276] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10469.249277] Call Trace:
+[10469.249283]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10469.249287]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10469.249289]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10469.249292]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10469.249294]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10469.249298]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10469.249300]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10469.249301]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10469.249303]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10469.249306]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10470.247107] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10470.247111] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10470.247113] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10470.247114] Call Trace:
+[10470.247121]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10470.247125]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10470.247127]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10470.247130]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10470.247132]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10470.247135]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10470.247137]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10470.247139]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10470.247141]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10470.247143]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10471.243789] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10471.243792] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10471.243795] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10471.243796] Call Trace:
+[10471.243803]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10471.243806]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10471.243808]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10471.243811]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10471.243813]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10471.243816]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10471.243818]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10471.243820]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10471.243822]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10471.243824]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10472.240850] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10472.240853] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10472.240856] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10472.240857] Call Trace:
+[10472.240863]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10472.240867]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10472.240869]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10472.240872]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10472.240874]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10472.240877]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10472.240879]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10472.240881]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10472.240883]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10472.240885]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10473.238697] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10473.238700] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10473.238703] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10473.238704] Call Trace:
+[10473.238711]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10473.238714]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10473.238716]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10473.238719]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10473.238721]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10473.238724]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10473.238727]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10473.238728]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10473.238730]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10473.238733]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10474.235267] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10474.235271] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10474.235273] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10474.235274] Call Trace:
+[10474.235280]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10474.235284]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10474.235286]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10474.235289]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10474.235291]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10474.235294]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10474.235296]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10474.235298]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10474.235300]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10474.235302]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10475.232745] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10475.232748] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10475.232751] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10475.232752] Call Trace:
+[10475.232759]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10475.232762]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10475.232764]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10475.232767]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10475.232769]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10475.232772]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10475.232774]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10475.232776]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10475.232778]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10475.232780]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10476.230212] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10476.230215] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10476.230218] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10476.230219] Call Trace:
+[10476.230225]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10476.230228]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10476.230230]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10476.230233]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10476.230235]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10476.230238]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10476.230240]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10476.230241]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10476.230243]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10476.230246]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10477.227334] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10477.227337] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10477.227340] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10477.227341] Call Trace:
+[10477.227348]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10477.227352]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10477.227354]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10477.227357]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10477.227359]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10477.227362]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10477.227364]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10477.227366]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10477.227368]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10477.227370]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
+[10478.225107] BUG: sleeping function called from invalid context at include/linux/kernel.h:170
+[10478.225111] in_atomic(): 1, irqs_disabled(): 0, pid: 1765, name: ml605_api_test
+[10478.225113] Pid: 1765, comm: ml605_api_test Not tainted 2.6.35.6-45.fc14.x86_64 #1
+[10478.225114] Call Trace:
+[10478.225120]  [<ffffffff8103d12b>] __might_sleep+0xeb/0xf0
+[10478.225124]  [<ffffffffa015fa4b>] might_fault+0x1c/0x23 [xrawdata_v6]
+[10478.225127]  [<ffffffffa015fd5b>] rawdata_dev_ioctl+0x14e/0x225 [xrawdata_v6]
+[10478.225129]  [<ffffffff81123e59>] vfs_ioctl+0x80/0xa7
+[10478.225131]  [<ffffffff81124770>] do_vfs_ioctl+0x468/0x49b
+[10478.225134]  [<ffffffff81068f97>] ? hrtimer_wakeup+0x0/0x26
+[10478.225137]  [<ffffffff81069675>] ? hrtimer_start_range_ns+0x14/0x16
+[10478.225138]  [<ffffffff811247f9>] sys_ioctl+0x56/0x79
+[10478.225140]  [<ffffffff81069cf6>] ? sys_nanosleep+0x65/0x73
+[10478.225143]  [<ffffffff81009cf2>] system_call_fastpath+0x16/0x1b
